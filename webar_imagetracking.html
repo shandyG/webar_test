@@ -1,0 +1,34 @@
+<!doctype HTML>
+<html>
+<!-- A-Frame ライブラリの読み込み -->
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+ <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+<body style='margin:0px; overflow:hidden;'>
+<!-- こっからA-Frame -->
+
+<a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
+   
+   <a-nft
+   type="nft"
+   url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/shandyG/webar_test/tree/master/image_description/duble_nao"
+   smooth="true"
+   smoothCount="10"
+   smoothTolerance=".01"
+   smoothThreshold="5"
+   >
+   
+   <a-entity
+                gltf-model='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/yuki-sakaguchi/web-ar/master/public/image-tracking/assets/model/cake.gltf'
+                scale="50 50 50"
+                position="50 150 -100"
+                >
+   </a-entity>
+
+   </a-nft>
+
+   <a-entity camera></a-entity>
+ </a-scene>
+
+<!-- ここまででA-Frameおわり -->
+</body>
+</html>
